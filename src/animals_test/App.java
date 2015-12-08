@@ -10,14 +10,18 @@ public class App {
        // Animal animal = new Animal(3,34,11,"blue");
 
         Zoo zoo = new Zoo();
+        Zoo zoo2 = new Zoo();
         zoo.addAnimal(murka);
         zoo.addAnimal(barsik);
         Animal tuzik = new Dog(1,2,4,"ew","tuzik",true);
         zoo.addAnimal(tuzik);
-
-        System.out.println(murka.getVoice());
-        System.out.println(tuzik.getVoice());
-        System.out.println(barsik.getVoice());
+        zoo2.addAnimal(tuzik);
+        Zoo.printDomesticAnimalName(barsik);
+        System.out.println(zoo.ID);
+        System.out.println(zoo2.ID);
+       // System.out.println(murka.getVoice());
+       // System.out.println(tuzik.getVoice());
+       // System.out.println(barsik.getVoice());
 
         //zoo.voiceAll();
 

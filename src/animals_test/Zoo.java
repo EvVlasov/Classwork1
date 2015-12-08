@@ -8,6 +8,12 @@ import java.util.List;
  */
 public class Zoo {
 private List<Animal> animals = new ArrayList<>();
+   public static   int ID;
+
+    public Zoo() {
+        ID++;
+    }
+
     public void addAnimal(Animal animal){
         animals.add(animal);
     }
@@ -17,6 +23,8 @@ private List<Animal> animals = new ArrayList<>();
         }
     }
 
-
+   public static void printDomesticAnimalName(Domestic domesticAnimal){
+       System.out.println(domesticAnimal.getName());
+   }
 
 }
