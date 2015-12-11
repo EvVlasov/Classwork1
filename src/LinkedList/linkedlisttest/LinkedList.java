@@ -67,7 +67,6 @@ public class LinkedList implements Collection {
         if(nodeToRemove == null) return false;
 
         Node previousNode = findPreviousNode(nodeToRemove);
-        // reyrejsdkg
         return false;
     }
 
